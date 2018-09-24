@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>家賃予測</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="static/CSS/stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">住宅価格が予測できる</div>
+    </div>
+    <div class="contents">
+      <form action="./predict-house-result" method="POST">
+        <p>506行のデータのうち何行目をインプットとして予測するか（index指定）</p>
+        <p><input name='index' type='text' value=0 size=5></p>
+        <p><button type='submit' name='action' value='send'>予測実行</button></p>
+      </form>
+    </div>
+    <div class="footer">
+    </div>
+  </body>
+</html>

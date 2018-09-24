@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ChartJSのテスト</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  </head>
+  <body>
+    <canvas id="bar" width="600" height="300"></canvas>
+    <canvas id="line" width="600" height="300"></canvas>
+    <script type="text/javascript">
+        var labels = {{labels|safe}}
+        var values1 = {{values1}}
+        var values2 = {{values2}}
+    </script>
+    <script src="static/JS/graph.js"></script>
+
+<!--
+    <script>
+var chartData = {
+// labels: ['hoge','fugo','foo','bar','5'],
+  labels:[
+    {% for label in labels %}
+      '{{label}}',
+    {% endfor %}
+  ],
+  datasets:[
+    {
+      backgroundColor:'#dddddd',
+      data:[
+        {% for value in values1 %}
+          {{value}},
+        {% endfor %}
+      ]
+    },
+    {
+      backgroundColor:'#0984e3',
+      data:[
+        {% for value in values2 %}
+          {{value}},
+        {% endfor %}
+      ]
+    },
+  ]
+};
+
+// 要素の指定
+var chart_elem = document.getElementById('bar').getContext('2d');
+var line_elem = document.getElementById('line').getContext('2d');
+
+// 描画
+var bar = new Chart(chart_elem, {
+  type:'bar',
+  data:chartData,
+  options:{
+    scales:{
+      yAxes:[{
+        ticks:{
+          beginAtZero:true
+        }
+      }]
+    }
+  }
+})
+
+var line = new Chart(line_elem, {
+  type:'line',
+  data:chartData,
+})
+
+    </script>
+-->
+  </body>
+</html>

@@ -1,0 +1,90 @@
+/* 全体 */
+body {
+  font-family: "Avenir Next";
+}
+
+/* header */
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+/* main */
+.main td{
+  padding:3px;
+  padding-left:10px;
+}
+
+.main {
+  padding: 0px 80px;
+  height:900px;
+}
+
+.copy-container h1 {
+  font-size: 40px;
+}
+
+.contents span {
+  color: #ff4a4a;
+}
+
+.contents {
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+.section-subtitle {
+  margin-bottom: 15px;
+}
+
+.section-subtitle span {
+  background: linear-gradient(transparent 60%, #74b9ff 50%);
+  color: black;
+}
+
+.contents-item img{
+  width:250px;
+}
+
+.contents-item p{
+  text-align:center;
+  font-size:15px;
+  margin-top: 15px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+}
+
+/* footer */
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 90px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+}

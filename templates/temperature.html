@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>今月・先月の気温</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="static/CSS/stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">東京の先月〜今月の気温</div>
+    </div>
+    <canvas id="line" width="600" height="300"></canvas>
+    <script type="text/javascript">
+      var dateValues = {{dateValues|safe}}
+      var aveValues = {{aveValues|safe}}
+      var maxValues = {{maxValues|safe}}
+      var minValues = {{minValues|safe}}
+    </script>
+    <script src="static/JS/temperature.js"></script>
+    <div class="footer">
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="static/CSS/stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">NambaPortal</div>
+    </div>
+
+    <div class="main">
+
+      <div class="contents">
+        <h3 class="section-title">Flaskの練習<span>.</span></h3>
+          <p>hoge</p>
+          <p><a href="./predict-house">住宅価格予測</a></p>
+          <p><a href="./chart">Chart</a></p>
+          <p><a href="./temperature">東京の先月・今月の気温</a></p>
+        <div class="section-subtitle"><span>第5週の宿題でやったこと</span></div>
+          <ul>
+            <li>自己紹介ページにChartページへのリンク追加、少し構成変更してherokuにアップ</li>
+            <li>Chart.htmlについて、JavascriptをHTMLファイルにべた書き→ファイル分割（値渡しだけHTML内）</li>
+            <li>BeautifulSoupを用いて気象庁のHPを随時スクレイピングし、アクセスした月及びその前月の東京の最高気温・最低気温・平均気温を取得して表示するページを作成（上のリンク）</li>
+            <!-- データを取得→日付・最高気温・最低気温・平均気温をそれぞれ配列に格納→JSに渡す -->
+          </ul>
+        <div class="section-subtitle"><span>第10週の宿題でやったこと</span></div>
+          <ul>
+            <li>自己紹介ページに住宅価格予測ページへのリンク追加</li>
+            <li>住宅価格予測APIをpredict-house-apiとして公開</li>
+            <li>予測したいデータのインデックスを指定できるように。（とりあえず値渡せればなんでも出来そうなので、実装はこれだけ。）</li>
+            <li>（時間があれば）chainerでモデルを作り直してみて、精度向上を目指してみる</li>
+          </ul>
+        <h3 class="section-title">自己紹介<span>.</span></h3>
+        <table>
+          <tr>
+            <td>名前</td>
+            <td>難波　大輔</td>
+          </tr>
+          <tr>
+            <td>誕生日</td>
+            <td>1987.4.13</td>
+          </tr>
+          <tr>
+            <td>入社年度</td>
+            <td>2010</td>
+          </tr>
+          <tr>
+            <td>血液型</td>
+            <td>AB</td>
+          </tr>
+        </table>
+
+        <div class="section-subtitle"><span>好きなもの</span></div>
+          <div class="contents-item">
+            <img src="static/images/game.jpg" alt="">
+            <p>ゲーム</p>
+          </div>
+          <div class="contents-item">
+            <img src="static/images/baseball.jpg" alt="">
+            <p>野球観戦</p>
+          </div>
+          <div class="contents-item">
+            <img src="static/images/manga.jpg" alt="">
+            <p>漫画</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo"></div>
+    </div>
+  </body>
+</html>
