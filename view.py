@@ -23,8 +23,8 @@ UPLOAD_FOLDER = './static/images'
 ALLOWED_EXTENSIONS = set(['txt','pdf','png','jpg','jpeg'])
 
 # modelの読み込み
-model = L.Classifier(CNN())
-chainer.serializers.load_npz('dog_cat.npz', model)
+model_cnn = L.Classifier(CNN())
+chainer.serializers.load_npz('dog_cat.npz', model_cnn)
 
 # 犬猫ラベル
 labels = {
@@ -37,7 +37,7 @@ labels = {
 # 犬猫推論実行(Numpy形式で画像が入ってくる前提)
 def infer(x):
     x = x[np.newaxis]
-    y = model.predictor(x)
+    y = model_cnn.predictor(x)
     y = F.softmax(y).data
     y = np.argmax(y, axis=1)
     # ここってToStringしてるだけ？イケてなくない？
