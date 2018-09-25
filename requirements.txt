@@ -7,3 +7,6 @@ numpy
 sklearn
 pandas
 requests
+Jinja2==2.9.6
+Werkzeug==0.12.1
+Pillow==5.1.0
