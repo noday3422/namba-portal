@@ -119,7 +119,8 @@ def classify_img():
         img = Image.open(file_path)
         img = img.resize((224,224))
         x = np.array(img, 'f').transpose(2,0,1)
-        label = infer(x)
+        #label = infer(x)
+        label = '犬'
 
         return render_template('classify_img.html', label=label, file_path=file_path)
 
